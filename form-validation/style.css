@@ -18,7 +18,7 @@ body {
 }
 
 form {
-    width: 50%;
+    width: clamp(400px, 50%, 580px);
     background-color: rgba(255, 255, 255, 0.24);
     border-radius: 12px;
     direction: rtl;
@@ -92,7 +92,7 @@ form {
 
 .submit {
     display: block;
-    width: 180px;
+    width: 40%;
     padding: 12px 16px;
     background-color: #d8d8d8;
     color: #333;
@@ -103,5 +103,20 @@ form {
     cursor: pointer;
     font-family: 'Vazir';
     font-size: 0.875rem;
-    transition: 0.7s;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        padding: 100px 60px 35px;;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .submit {
+        width: 120px;
+    } */
 }

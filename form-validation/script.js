@@ -90,6 +90,8 @@ const enableSubmit = () => {
         submitBtn.style.color = '#fff'
     } else {
         submitBtn.setAttribute('disabled', 'disabled')
+        submitBtn.style.backgroundColor = '#d8d8d8'
+        submitBtn.style.color = '#333'
     }
     console.log(formValidation)
 }
