@@ -146,12 +146,39 @@ body {
     background-color: red;
 }
 
-
-
-
-
 .item-control .control-box i {
     font-size: 20px;
     color: #fff;
 }
 
+@media screen and (max-width: 850px) {
+    .container .add {
+        height: auto;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .add .input-title {
+        width: 100%;
+    }
+
+    .add .input-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .show .todo-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .show .todo-item .item-title {
+        width: 100%;
+    }
+    
+    .show .todo-item .item-control {
+        width: 100%;
+        justify-content: center;
+    }
+}
